@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		5A96637E1B362CEA0051A1F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A96637D1B362CEA0051A1F4 /* AppDelegate.swift */; };
-		5A9663801B362CEA0051A1F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A96637F1B362CEA0051A1F4 /* ViewController.swift */; };
 		5A9663831B362CEA0051A1F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A9663811B362CEA0051A1F4 /* Main.storyboard */; };
 		5A9663851B362CEA0051A1F4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A9663841B362CEA0051A1F4 /* Images.xcassets */; };
 		5A9663881B362CEA0051A1F4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A9663861B362CEA0051A1F4 /* LaunchScreen.xib */; };
 		5A9663941B362CEA0051A1F4 /* EmotionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9663931B362CEA0051A1F4 /* EmotionsTests.swift */; };
+		5A96639E1B362EB60051A1F4 /* EmotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A96639D1B362EB60051A1F4 /* EmotionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +29,13 @@
 		5A9663781B362CEA0051A1F4 /* Emotions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emotions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A96637C1B362CEA0051A1F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A96637D1B362CEA0051A1F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5A96637F1B362CEA0051A1F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5A9663821B362CEA0051A1F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5A9663841B362CEA0051A1F4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5A9663871B362CEA0051A1F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		5A96638D1B362CEA0051A1F4 /* EmotionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmotionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A9663921B362CEA0051A1F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A9663931B362CEA0051A1F4 /* EmotionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionsTests.swift; sourceTree = "<group>"; };
+		5A96639D1B362EB60051A1F4 /* EmotionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +77,8 @@
 		5A96637A1B362CEA0051A1F4 /* Emotions */ = {
 			isa = PBXGroup;
 			children = (
-				5A96637D1B362CEA0051A1F4 /* AppDelegate.swift */,
-				5A96637F1B362CEA0051A1F4 /* ViewController.swift */,
 				5A9663811B362CEA0051A1F4 /* Main.storyboard */,
-				5A9663841B362CEA0051A1F4 /* Images.xcassets */,
-				5A9663861B362CEA0051A1F4 /* LaunchScreen.xib */,
+				5A96639D1B362EB60051A1F4 /* EmotionViewController.swift */,
 				5A96637B1B362CEA0051A1F4 /* Supporting Files */,
 			);
 			path = Emotions;
@@ -90,6 +87,9 @@
 		5A96637B1B362CEA0051A1F4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5A9663841B362CEA0051A1F4 /* Images.xcassets */,
+				5A96637D1B362CEA0051A1F4 /* AppDelegate.swift */,
+				5A9663861B362CEA0051A1F4 /* LaunchScreen.xib */,
 				5A96637C1B362CEA0051A1F4 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -212,7 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A9663801B362CEA0051A1F4 /* ViewController.swift in Sources */,
+				5A96639E1B362EB60051A1F4 /* EmotionViewController.swift in Sources */,
 				5A96637E1B362CEA0051A1F4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
