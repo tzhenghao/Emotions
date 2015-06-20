@@ -3,5 +3,36 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Emotion View Controller-->
+        <scene sceneID="0uO-gf-Mbi">
+            <objects>
+                <viewController id="fTs-fk-adJ" customClass="EmotionViewController" customModule="Emotions" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Pij-6X-9X0"/>
+                        <viewControllerLayoutGuide type="bottom" id="dFD-9j-c4T"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6qX-5f-Gpf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xB2-sb-35v" customClass="FaceView" customModule="Emotions" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="xB2-sb-35v" secondAttribute="trailing" id="4Wh-tC-ZhO"/>
+                            <constraint firstItem="xB2-sb-35v" firstAttribute="bottom" secondItem="dFD-9j-c4T" secondAttribute="top" id="8fh-cI-drC"/>
+                            <constraint firstItem="xB2-sb-35v" firstAttribute="top" secondItem="6qX-5f-Gpf" secondAttribute="top" id="jsr-UT-9Dp"/>
+                            <constraint firstItem="xB2-sb-35v" firstAttribute="leading" secondItem="6qX-5f-Gpf" secondAttribute="leading" id="xaf-nv-p0T"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="znS-k5-wN2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="274" y="227"/>
+        </scene>
+    </scenes>
 </document>
