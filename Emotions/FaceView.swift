@@ -8,12 +8,17 @@
 
 import UIKit
 
+@IBDesignable // Shows the drawn face in the storyboard.
+
 class FaceView: UIView {
 
+    @IBInspectable // Create a UI to make edits to the FaceView.
     var lineWidth: CGFloat = 3 { didSet { setNeedsDisplay() } }
     
+    @IBInspectable // Create a UI to make edits to the FaceView.
     var color: UIColor = UIColor.blueColor() { didSet { setNeedsDisplay() } }
 
+    @IBInspectable // Create a UI to make edits to the FaceView.
     var scale: CGFloat = 0.9 { didSet { setNeedsDisplay() } }
 
     var faceCenter: CGPoint {
