@@ -8,8 +8,12 @@
 
 import UIKit
 
-@IBDesignable // Shows the drawn face in the storyboard.
+protocol FaceViewDataSource : class {
+    
+    func smilinessForFaceView(sender: FaceView) -> Double?
+}
 
+@IBDesignable // Shows the drawn face in the storyboard.
 class FaceView: UIView {
 
     @IBInspectable // Create a UI to make edits to the FaceView.
@@ -29,6 +33,8 @@ class FaceView: UIView {
         return min(bounds.size.width, bounds.size.height)/2 * scale
     }
     
+    weak var dataSource: FaceViewDataSource?
+
     // Constant ratios.
     private struct Scaling {
         static let FaceRadiusToEyeRadiusRatio: CGFloat = 10
@@ -98,7 +104,7 @@ class FaceView: UIView {
         bezierPathForEye(.Right).stroke()
         
         // Draw the smile.
-        let initialSmile = 0.85
+        let initialSmile = dataSource?.smilinessForFaceView(self) ?? 0.0 
         let smilePath = bezierPathForSmile(initialSmile)
         smilePath.stroke()
     }

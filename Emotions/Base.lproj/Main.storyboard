@@ -34,6 +34,9 @@
                             <constraint firstItem="xB2-sb-35v" firstAttribute="leading" secondItem="6qX-5f-Gpf" secondAttribute="leading" id="xaf-nv-p0T"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="faceView" destination="xB2-sb-35v" id="MTg-bZ-IZc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="znS-k5-wN2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

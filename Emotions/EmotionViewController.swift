@@ -8,9 +8,15 @@
 
 import UIKit
 
-class EmotionViewController: UIViewController {
+class EmotionViewController: UIViewController, FaceViewDataSource {
 
-    var happiness : Int = 50 { // 0 = very sad, 100 = happiest
+    @IBOutlet weak var faceView: FaceView! {
+        didSet {
+            faceView.dataSource = self
+        }
+    }
+
+    var happiness : Int = 75 { // 0 = very sad, 100 = happiest
         didSet {
             // Bound it to have range between 0 and 100
             happiness = min(max(happiness, 0), 100)
@@ -20,6 +26,10 @@ class EmotionViewController: UIViewController {
     }
     
     func updateUI() {
-        
+        faceView.setNeedsDisplay()
+    }
+    
+    func smilinessForFaceView(sender: FaceView) -> Double? {
+        return Double(happiness-50)/50 // Convert from 0 to 100 scale -> -1 to 1 range.
     }
 }
