@@ -39,7 +39,7 @@ class EmotionViewController: UIViewController, FaceViewDataSource {
         didSet {
             // Bound it to have range between 0 and 100
             happiness = min(max(happiness, 0), 100)
-            println("happiness = \(happiness)")
+            print("happiness = \(happiness)")
             updateUI();
         }
     }

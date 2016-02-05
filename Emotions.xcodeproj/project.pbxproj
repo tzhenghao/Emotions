@@ -159,6 +159,8 @@
 		5A9663701B362CEA0051A1F4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0720;
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Zheng Hao Tan";
 				TargetAttributes = {
@@ -413,6 +415,7 @@
 				5A9663991B362CEA0051A1F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5A96639A1B362CEA0051A1F4 /* Build configuration list for PBXNativeTarget "EmotionsTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +424,7 @@
 				5A96639C1B362CEA0051A1F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -85,7 +85,7 @@ class FaceView: UIView {
         let mouthHeight = faceRadius / Scaling.FaceRadiusToMouthHeightRatio
         let mouthVerticalOffset = faceRadius / Scaling.FaceRadiusToMouthOffsetRatio
         
-        var smileHeight = CGFloat(max(min(fractionOfMaxSmile, 1), -1)) * mouthHeight
+        let smileHeight = CGFloat(max(min(fractionOfMaxSmile, 1), -1)) * mouthHeight
         
         let start = CGPoint(x: faceCenter.x - mouthWidth/2, y: faceCenter.y + mouthVerticalOffset)
         let end = CGPoint(x: start.x + mouthWidth, y: start.y)
